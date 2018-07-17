@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookViewCellIdentifier" rowHeight="143" id="KGk-i7-Jjw" customClass="BookViewCell" customModule="SearchBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-Dl-MWs">
+                        <rect key="frame" x="10" y="10" width="84" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="KZv-x9-L6d"/>
+                            <constraint firstAttribute="height" constant="130" id="zUf-eR-Hkc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-vh-ztA">
+                        <rect key="frame" x="104" y="10" width="311" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salim Wijaya, Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-jW-hle">
+                        <rect key="frame" x="104" y="35" width="311" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMU-Fp-cqq" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="104" y="63" width="311" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="iAj-ez-v13"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.99607843139999996" green="0.7725490196" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="0.99607843139999996" green="0.7725490196" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="0.99607843139999996" green="0.7725490196" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQk-Zx-a2b">
+                        <rect key="frame" x="10" y="150" width="405" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="don-Ri-Wqk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qib-jW-hle" secondAttribute="trailing" constant="10" id="7nv-bk-ibf"/>
+                    <constraint firstAttribute="trailing" secondItem="rMU-Fp-cqq" secondAttribute="trailing" constant="10" id="CPx-jh-ORY"/>
+                    <constraint firstItem="IxU-vh-ztA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="HbJ-LF-pHI"/>
+                    <constraint firstAttribute="trailing" secondItem="TQk-Zx-a2b" secondAttribute="trailing" constant="10" id="KYk-UR-zfm"/>
+                    <constraint firstItem="OZa-Dl-MWs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZZ7-ay-bu7"/>
+                    <constraint firstAttribute="bottom" secondItem="TQk-Zx-a2b" secondAttribute="bottom" id="f4T-Rn-Med"/>
+                    <constraint firstItem="Qib-jW-hle" firstAttribute="leading" secondItem="OZa-Dl-MWs" secondAttribute="trailing" constant="10" id="gRB-V9-yRc"/>
+                    <constraint firstItem="IxU-vh-ztA" firstAttribute="leading" secondItem="OZa-Dl-MWs" secondAttribute="trailing" constant="10" id="jVK-qx-lz2"/>
+                    <constraint firstItem="OZa-Dl-MWs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lvk-g6-G0y"/>
+                    <constraint firstItem="rMU-Fp-cqq" firstAttribute="top" secondItem="Qib-jW-hle" secondAttribute="bottom" constant="10" id="ndk-Zu-bKj"/>
+                    <constraint firstItem="Qib-jW-hle" firstAttribute="top" secondItem="IxU-vh-ztA" secondAttribute="bottom" constant="5" id="oXS-Cq-tmy"/>
+                    <constraint firstItem="TQk-Zx-a2b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="onc-wU-iLk"/>
+                    <constraint firstItem="rMU-Fp-cqq" firstAttribute="leading" secondItem="OZa-Dl-MWs" secondAttribute="trailing" constant="10" id="pJ1-f3-Lld"/>
+                    <constraint firstAttribute="trailing" secondItem="IxU-vh-ztA" secondAttribute="trailing" constant="10" id="xCC-K7-nMJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgvw" destination="OZa-Dl-MWs" id="dYV-9M-buR"/>
+                <outlet property="lblAuthor" destination="Qib-jW-hle" id="beD-Cc-rcl"/>
+                <outlet property="lblTitle" destination="IxU-vh-ztA" id="Mm6-M4-gYD"/>
+                <outlet property="vwRating" destination="rMU-Fp-cqq" id="1Wb-tq-6uM"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="103.5"/>
+        </tableViewCell>
+    </objects>
+</document>
